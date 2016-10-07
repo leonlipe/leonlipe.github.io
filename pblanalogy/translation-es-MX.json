@@ -1,0 +1,21 @@
+{
+ "app": {	
+   "show_date": "Mostrar fecha",
+   "show_dow": "Mostrar dia de la semana",
+   "show_bt": "Mostrar icono de bluetooth",
+   "show_batt": "Mostrar icono de la bateria",
+   "show_invert": "Invertir colores",
+   "show_seconds": "Mostrar segundos",
+   "show_temperature": "Mostrar temperatura (Celcius)",
+   "show_humidity": "Mostrar humedad",
+   "show_sunset": "Mostrar puesta de sol",
+   "show_sunrise": "Mostrar salida del sol",
+   "save": "Guardar",
+   "title": "Analogy",
+   "main_title": "Configuracion del reloj",
+   "date_options": "Opciones de fecha",
+   "icon_options": "Opciones de iconos",
+   "watch_options": "Opciones de reloj"
+
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "app": {	
+   "show_date": "Show date",
+   "show_dow": "Show day of week",
+   "show_bt": "Show bluetooth icon",
+   "show_batt": "Show battery icon",
+   "show_invert": "Invert colors",
+   "show_seconds": "Show seconds",
+   "show_temperature": "Show temperature (Celcius)",
+   "show_humidity": "Show humidity",
+   "show_sunset": "Show sunset",
+   "show_sunrise": "Show sunrise",
+   "save": "Save",
+   "title": "Analogy",
+   "main_title": "Watchface options",
+   "date_options": "Date options",
+   "icon_options": "Icon options",
+   "watch_options": "Watch options"
+
+ }
+}

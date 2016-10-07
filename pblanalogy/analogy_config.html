@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Analogy</title>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://leonlipe.github.io/pblanalogy/i18next-1.9.0.min.js"></script>
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+  </head>
+  <body>
+    <h1>Analogy</h1>
+    <p><span class="translateable" data-i18n="app.main_title"></span></p>
+ 
+
+  <fieldset>
+  <h4> <span class="translateable" data-i18n="app.date_options"></span></h4>
+<div class="row">
+  <div class="col-md-2"><label for="show_date"><span class="translateable" data-i18n="app.show_date"></span></label></div>
+  <div class="col-md-2"><input type="checkbox" checked data-toggle="toggle" id="show_date" ></div>
+</div>
+<div class="row">
+  <div class="col-md-2"><label for="show_dow"><span class="translateable" data-i18n="app.show_dow"></span></label></div>
+  <div class="col-md-2"><input type="checkbox" checked data-toggle="toggle" id="show_dow"></div>
+</div>  
+ </fieldset>
+  <fieldset>
+  <h4> <span class="translateable" data-i18n="app.icon_options"></span> </h4>
+<div class="row">
+  <div class="col-md-2">  <label for="show_date"><span class="translateable" data-i18n="app.show_bt"></span></label>  </div>
+  <div class="col-md-2">  <input type="checkbox" checked data-toggle="toggle" id="show_bt">  </div>
+</div>  
+<div class="row">
+  <div class="col-md-2">  <label for="show_dow"><span class="translateable" data-i18n="app.show_batt"></span></label>  </div>
+  <div class="col-md-2">  <input type="checkbox" checked data-toggle="toggle" id="show_bat">  </div>
+</div>  
+
+ 
+ </fieldset>
+ <fieldset>
+  <h4> <span class="translateable" data-i18n="app.watch_options"></span> </h4>
+<div class="row">
+  <div class="col-md-2">  <label for="show_dow"><span class="translateable" data-i18n="app.show_invert"></span></label>  </div>
+  <div class="col-md-2">   <input type="checkbox" checked data-toggle="toggle" id="inverted">  </div>
+</div>  
+<div class="row">
+  <div class="col-md-2">  <label for="show_date"><span class="translateable" data-i18n="app.show_seconds"></span></label>  </div>
+  <div class="col-md-2">  <input type="checkbox" checked data-toggle="toggle" id="show_sec">  </div>
+</div>  
+<div class="row">
+  <div class="col-md-2">  <label for="show_dow"><span class="translateable" data-i18n="app.show_temperature"></span></label>  </div>
+  <div class="col-md-2">   <input type="checkbox" checked data-toggle="toggle" id="temperature">  </div>
+</div>  
+<div class="row">
+  <div class="col-md-2">  <label for="show_dow"><span class="translateable" data-i18n="app.show_celcius"></span></label>  </div>
+  <div class="col-md-2">   <input type="checkbox" checked data-toggle="toggle" data-on="Celcius" data-off="Fahrenheit" data-onstyle="primary" data-offstyle="primary" id="toggle-celcius">  </div>
+</div>  
+<div class="row">
+  <div class="col-md-2">  <label for="back_type"><span class="translateable" data-i18n="app.time_poll"></span></label>  </div>
+  <div class="col-md-2">    <select id="time_poll" class="form-control">
+      <option value="15">15 min.</option>
+      <option value="30">30 min.</option>
+      <option value="60">60 min.</option>
+      <option value="90">90 min.</option>
+      <option value="120">120 min.</option>
+    </select></div>
+</div>  
+<!--
+<div class="row">
+  <div class="col-md-2">    <label for="show_dow">Mostrar condiciones</label> </div>
+  <div class="col-md-2">  <input type="checkbox" checked data-toggle="toggle" id="conditions">  </div>
+</div>   -->
+<div class="row">
+  <div class="col-md-2">   <label for="show_dow"><span class="translateable" data-i18n="app.show_humidity"></span></label> </div>
+  <div class="col-md-2">  <input type="checkbox" checked data-toggle="toggle" id="humidity">
+  </div>  </div>
+</div>  
+<!--
+<div class="row">
+  <div class="col-md-2">   <label for="show_dow">Mostrar viento</label> </div>
+  <div class="col-md-2">   <input type="checkbox" checked data-toggle="toggle" id="wind"> </div>
+</div>  -->
+<div class="row">
+  <div class="col-md-2">    <label for="show_dow"><span class="translateable" data-i18n="app.show_sunrise"></span></label> </div>
+  <div class="col-md-2">   <input type="checkbox" checked data-toggle="toggle" id="sunrise"> </div>
+</div>    
+<div class="row">
+  <div class="col-md-2">   <label for="show_dow"><span class="translateable" data-i18n="app.show_sunset"></span></label> </div>
+  <div class="col-md-2">    <input type="checkbox" checked data-toggle="toggle" id="sunset"> </div>
+</div>    
+<!--
+<div class="row">
+  <div class="col-md-2">   <label for="show_dow">Mostrar hora digital</label> </div>
+  <div class="col-md-2">   <input type="checkbox" checked data-toggle="toggle" id="digitaltime"> </div>
+</div> 
+  
+<div class="row">
+  <div class="col-md-2">  <label for="back_type">Tipo de fondo</label>  </div>
+  <div class="col-md-2">    <select id="back_type" class="form-control">
+      <option value="0">Solo marcas de hora</option>
+      <option value="1">Marcas de hora y segundos</option>
+      <option value="2">Imagen de fondo(Modern)</option>
+    </select></div>
+</div>    
+<div class="row">
+  <div class="col-md-2">  <label for="hand_type">Tipo de manecilla</label>  </div>
+  <div class="col-md-2">    <select id="hand_type" class="form-control">
+      <option value="0">Flat</option>
+      <option value="1">Stylized</option>
+      <option value="2" selected>Flat (Original)</option>
+    </select> </div>
+</div>    
+--> 
+
+<!--  <div class="form-group">
+    <label for="show_dow">Margen</label>
+    <input id="margin" type="text" class="form-control" value="8"/>    
+  </div>  
+  <div class="form-group">
+    <label for="show_dow">Longitud de minutos</label>
+    <input id="min_len" type="text" class="form-control" value="70" />    
+  </div>  
+  <div class="form-group">
+    <label for="show_dow">Longitud de segundos</label>
+    <input id="sec_len" type="text" class="form-control" value="70"/>  
+  </div>  
+  <div class="form-group">
+    <label for="show_dow">Longitud de segundos (inverso)</label>
+    <input id="sec_len_inv" type="text" class="form-control" value="20"/>    
+  </div>  
+  <div class="form-group">
+    <label for="show_dow">Longitud de hora</label>
+    <input id="hour_len" type="text" class="form-control" value="45"/>      
+  </div>  
+-->
+ </fieldset>
+
+ <br/>
+ <br/>
+ 
+<div class="row">
+  <button  class="btn btn-primary btn-lg" id="save_button"><span class="translateable" data-i18n="app.save"></span></button>
+</div>
+  <script>
+  //Setup to allow easy adding more options later
+  function saveOptions() {
+    var dateSelect = $("#show_date");
+    var dowSelect = $("#show_dow");
+    var btSelect = $("#show_bt");
+    var batSelect = $("#show_bat");
+    var showSecSelect = $("#show_sec");
+    var backSelect = $("#back_type");
+    var marginInput = $("#margin");
+    var minLenInput = $("#min_len");
+    var hourLenInput = $("#hour_len");
+    var secLenInput = $("#sec_len");
+    var secInvLenInput = $("#sec_len_inv");
+    var handTypeSelect = $("#hand_type");
+    var temperature = $("#temperature");
+    var conditions = $("#conditions");
+    var humidity = $("#humidity");
+    var wind = $("#wind");
+    var sunrise = $("#sunrise");
+    var sunset = $("#sunset");
+    var digitaltime = $("#digitaltime");
+    var inverted = $("#inverted");
+    var numbers = $("#numbers");
+    var celcius = $("#toggle-celcius");
+    var time_poll = $("#time_poll");
+
+    var options = {
+      "date": valForSelect(dateSelect.prop('checked')) ,
+      "dow": valForSelect(dowSelect.prop('checked')),
+      "bt": valForSelect(btSelect.prop('checked')),
+      "bat": valForSelect(batSelect.prop('checked')),
+      "showSec": valForSelect(showSecSelect.prop('checked')),
+      "back": backSelect.val(),
+      "margin": marginInput.val(),
+      "minLen": minLenInput.val(),
+      "hourLen": hourLenInput.val(),
+      "secLen": secLenInput.val(),
+      "secInvLen": secInvLenInput.val(),
+      "handType": handTypeSelect.val(),
+      "temperature": valForSelect(temperature.prop('checked')),
+      "conditions": valForSelect(conditions.prop('checked')),
+      "humidity": valForSelect(humidity.prop('checked')),
+      "wind": valForSelect(wind.prop('checked')),
+      "sunrise": valForSelect(sunrise.prop('checked')),
+      "sunset": valForSelect(sunset.prop('checked')),
+      "digitaltime": valForSelect(digitaltime.prop('checked')),
+      "inverted": valForSelect(inverted.prop('checked')),
+      "numbers": valForSelect(numbers.prop('checked')),
+      "celcius": valForSelect(celcius.prop('checked')),
+      "time_poll": time_poll.val()
+      
+    }
+     console.log(JSON.stringify(options));
+    return options;
+  }
+ 
+
+  function getUrlParameter(sParam){
+      var sPageURL = window.location.search.substring(1);
+      var sURLVariables = sPageURL.split('&');
+      for (var i = 0; i < sURLVariables.length; i++) 
+      {
+          var sParameterName = sURLVariables[i].split('=');
+          if (sParameterName[0] == sParam) 
+          {
+              return sParameterName[1];
+          }
+      }
+  }
+
+
+  function valForSelect(valor){
+    if (valor){
+      return '1';
+    }else{
+      return '0';
+    }
+ 
+  }
+
+  function setTogle(value, control){
+    if (value){
+      if (value==1){
+        control.bootstrapToggle('on')
+      }else{
+        control.bootstrapToggle('off')
+      }
+    }
+
+  }
+  function getURLVariable(name)  {
+    name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+    var regexS = "[\\?&]"+name+"=([^&#]*)",
+        regex = new RegExp(regexS),
+        results = regex.exec(window.location.href);
+    if (results == null) return "";
+    else return results[1];
+  }
+
+
+// Onready
+ $(function(){
+
+  i18n.init({ resGetPath: '__ns__-__lng__.json', lng: navigator.language }, function(t) { 
+  /* loading done */ 
+ // console.log(navigator.language);
+    $(".translateable").i18n();    
+  });
+  
+  $("#save_button").click(
+    function() {
+      var options = saveOptions();
+      var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(options));
+      document.location = location;
+    } 
+  );
+
+  var KEY_DATE = getURLVariable('KEY_DATE'); KEY_DATE = decodeURI(KEY_DATE);
+  var KEY_DAY = getURLVariable('KEY_DAY'); KEY_DAY = decodeURI(KEY_DAY);
+  var KEY_BT = getURLVariable('KEY_BT'); KEY_BT = decodeURI(KEY_BT);
+  var KEY_BATTERY = getURLVariable('KEY_BATTERY'); KEY_BATTERY = decodeURI(KEY_BATTERY);
+  var KEY_SECOND_HAND = getURLVariable('KEY_SECOND_HAND'); KEY_SECOND_HAND = decodeURI(KEY_SECOND_HAND);
+  var TEMPERATURE = getURLVariable('TEMPERATURE'); TEMPERATURE = decodeURI(TEMPERATURE);
+  var CONDITIONS = getURLVariable('CONDITIONS'); CONDITIONS = decodeURI(CONDITIONS);
+  var HUMIDITY = getURLVariable('HUMIDITY'); HUMIDITY = decodeURI(HUMIDITY);
+  var SUNRISE = getURLVariable('SUNRISE'); SUNRISE = decodeURI(SUNRISE);
+  var SUNSET = getURLVariable('SUNSET'); SUNSET = decodeURI(SUNSET);
+  var INVERTED = getURLVariable('INVERTED'); INVERTED = decodeURI(INVERTED);
+  var CELCIUS = getURLVariable('CELCIUS'); CELCIUS = decodeURI(CELCIUS);
+  var POLLTIME = getURLVariable('POLLTIME'); POLLTIME = decodeURI(POLLTIME);
+
+  setTogle(KEY_DATE,$("#show_date"));
+  setTogle(KEY_DAY,$("#show_dow"));
+  setTogle(KEY_BT,$("#show_bt"));
+  setTogle(KEY_BATTERY,$("#show_bat"));
+  setTogle(KEY_SECOND_HAND,$("#show_sec"));
+  setTogle(TEMPERATURE,$("#temperature"));
+  setTogle(CONDITIONS,$("#conditions"));
+  setTogle(HUMIDITY,$("#humidity"));
+  setTogle(SUNRISE,$("#sunrise"));
+  setTogle(SUNSET,$("#sunset"));
+  setTogle(INVERTED,$("#inverted"));
+  setTogle(CELCIUS,$("#toggle-celcius"));
+  
+  if (POLLTIME){
+    $("#time_poll").val(POLLTIME);
+  }
+ 
+
+
+ /* $("#show_date");
+  $("#show_date");
+  $("#show_bt");
+  $("#show_bat");
+  $("#show_sec");
+  $("#back_type");
+  //$("#margin");
+  //$("#min_len");
+  //$("#hour_len");
+  //$("#sec_len");
+  //$("#sec_len_inv");
+  $("#hand_type");
+  $("#temperature");
+  $("#conditions");
+  $("#humidity");
+  $("#wind");
+  $("#sunrise");
+  $("#sunset");
+  $("#digitaltime");
+  if (getUrlParameter("inverted")==1){
+    $("#inverted").bootstrapToggle('on');
+  }else{
+    $("#inverted").bootstrapToggle('off');
+  }
+
+*/
+  });
+</script>
+  </body>
+</html> 

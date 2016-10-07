@@ -1,0 +1,28 @@
+{
+ "app": {	
+   "show_date": "Mostrar fecha",
+   "show_dow": "Mostrar dia de la semana",
+   "show_bt": "Mostrar icono de bluetooth",
+   "show_batt": "Mostrar icono de la bateria",
+   "show_invert": "Invertir colores",
+   "show_seconds": "Mostrar segundos",
+   "show_temperature": "Mostrar temperatura",
+   "show_humidity": "Mostrar humedad",
+   "show_sunset": "Mostrar puesta de sol",
+   "show_sunrise": "Mostrar salida del sol",
+   "save": "Guardar",
+   "title": "Analogy",
+   "main_title": "Configuracion del reloj",
+   "date_options": "Opciones de fecha",
+   "icon_options": "Opciones de iconos",
+   "watch_options": "Opciones de reloj",
+   "show_celcius": "Unidades de tiempo",
+   "time_poll": "Actualizacion del clima",
+   "min_15":"15 minutos",
+   "min_30":"30 minutos",
+   "min_60":"60 minutos",
+   "min_90":"90 minutos",
+   "min_120":"120 minutos"   
+
+ }
+}

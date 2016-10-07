@@ -1,0 +1,28 @@
+{
+ "app": {	
+   "show_date": "Show date",
+   "show_dow": "Show day of week",
+   "show_bt": "Show bluetooth icon",
+   "show_batt": "Show battery icon",
+   "show_invert": "Invert colors",
+   "show_seconds": "Show seconds",
+   "show_temperature": "Show temperature",
+   "show_humidity": "Show humidity",
+   "show_sunset": "Show sunset",
+   "show_sunrise": "Show sunrise",
+   "save": "Save",
+   "title": "Analogy",
+   "main_title": "Watchface options",
+   "date_options": "Date options",
+   "icon_options": "Icon options",
+   "watch_options": "Watch options",
+   "show_celcius": "Weather units",
+   "time_poll": "Weather update time",
+   "min_15":"15 minutes",
+   "min_30":"30 minutes",
+   "min_60":"60 minutes",
+   "min_90":"90 minutes",
+   "min_120":"120 minutes"
+
+ }
+}
